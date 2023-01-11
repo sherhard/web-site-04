@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="web.css">
+</head>
+<body  onload="gotimer()" >
+	<header>
+		<div class="header">
+			<div class="logo"><h1>Logo</h1></div>
+		<div class="button" >
+
+			<button onclick="btn_menu()">кнопка</button>
+
+		</div>
+		<ul class="menu" id='elem'>
+			<li><a href="">home</a></li>
+			<li><a href="">about</a></li>
+			<li><a href="">card</a></li>
+			<li><a href="">person</a></li>
+		</ul>
+		</div>
+
+		<div class="head_bg">
+			<div class="head_tex">
+				<div class="head_text_bg">
+				<p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Repellendus<br> veniam ex id rem optio, dicta.111</p>
+			</div>
+			<div class="head_text_bg" style="display: none;">
+				<p>Sit amet consectetur, adipisicing elit. <br>Illum, aliquam! Dolorum, fugit, labore? <br>Rem eligendi cum inventore,<br> voluptates facilis provident, modi itaque similique <br>tenetur at illum soluta, quasi, vel accusantium.</p>
+			</div>
+			</div>
+
+			<div class="btn_slid">
+				<button onclick="btn_slid_text()"><<<<</button>
+			    <button onclick="btn_slid_text()">>>>></button>
+			</div>
+		</div>
+
+		
+	</header>
+
+	<section>
+		<div class="text_title">
+			<h1>About</h1>
+		</div>
+		<div class="container_form">
+
+			<ul class="form">
+				<li>Ваше имя и фамилия</li>
+				<li></li>
+				<li>Name</li>
+				<li><input type="text" onkeyup="form_01(this)" value placeholder="Введите ваше имя"></li>
+				<li>Surname</li>
+				<li><input type="text" onkeyup="form_02(this)" value placeholder="Введите ваше фамилию"></li>
+			</ul>
+
+			<ul class="form">
+				<li>Ваше имя и фамилия</li>
+				<li></li>
+				<li>Name</li>
+				<li><input type="text" id="form_text" value=""></li>
+				<li>Surname</li>
+				<li><input type="text" id="form_text_01" value=""></li>
+			</ul>
+			
+		</div>
+	</section>
+
+	<div class="container_grid">
+		<div class="text_title">
+			<h1 style="color:gold;">GRID</h1>
+		</div>
+
+		<div class="grid">
+			<div class="grid_card">
+				<div class="grid_img">
+					<img src="web_img/970x647/01.jpg" onmouseover="clik()" alt=""id="grid_img">
+				</div>
+				<div class="grid_img">
+					<img src="web_img/970x647/02.jpg" onmouseover="clik2()" alt=""id="grid_img">
+				</div>
+				<div class="grid_img">
+					<img src="web_img/970x647/03.jpg" onmouseover="clik3()" alt=""id="grid_img">
+				</div>
+				<div class="grid_img">
+					<img src="web_img/970x647/01.jpg" onmouseover="clik4()" alt=""id="grid_img" >
+				</div>
+			</div>
+			<div class="grid_card_avatar">
+				<div class="grid_img_avatar">
+					<img src="web_img/970x647/02.jpg" alt="" id="img_avatar">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container_carusel">
+		<div class="carusel">
+			<img src="web_img/carusel/1.jpg" alt="" id='carusel'>
+		</div>
+	</div>
+
+
+	<div class="slider_foto">
+			<div class="text_title">
+			<h1>компании</h1>
+			</div>
+		<div class="slider" onload="slider()">
+			<img src="web_img/clients/01.png" alt="" id='slider1'>
+			<img src="web_img/clients/02.png" alt="" id='slider2'>
+			<img src="web_img/clients/03.png" alt="" id='slider3'>
+			<img src="web_img/clients/04.png" alt="" id='slider4'>
+			<img src="web_img/clients/05.png" alt="" id='slider5'>
+		</div>
+		
+	</div>
+
+	<footer>
+		
+	</footer>
+
+
+
+
+
+	<script type="text/javascript" src="webJs/web.js"></script>
+	<script type="text/javascript" src="webJs/carus.js"></script>
+	<script type="text/javascript" src="webJs/slider.js"></script>
+	
+</body>
+</html>
